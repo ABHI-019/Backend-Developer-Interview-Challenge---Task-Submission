@@ -26,7 +26,7 @@ app.use('/api', createSyncRouter(db));
 app.use(errorHandler);
 
 // Start server
-async function start() {
+async function start(): Promise<void> {
   try {
     await db.initialize();
     console.log('Database initialized');

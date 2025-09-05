@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/senguttuvang/backend-interview-challenge#readme",
   "dependencies": {
+    "@types/sqlite3": "^3.1.11",
     "axios": "^1.11.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",

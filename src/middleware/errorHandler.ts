@@ -8,7 +8,7 @@ export function errorHandler(
   err: AppError,
   req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ): void {
   console.error('Error:', err);
 
@@ -20,4 +20,7 @@ export function errorHandler(
     timestamp: new Date().toISOString(),
     path: req.path,
   });
+  
+  // Call next() if you want to continue to other error handlers
+  // next();
 }
